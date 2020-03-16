@@ -1,0 +1,153 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+}
+
+/* To do this nav bar, I'd love to use Bootstrap three lines hamburger style*/
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+
+ul.navbar li {float: left;}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover:not(.active) {
+  background-color: #373b38;
+}
+
+ul.navbar li a.active {
+  background-color: #383d3a;
+}
+
+ul.navbar li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.navbar li.right, 
+  ul.navbar li {
+    float: none;
+  }
+}
+
+/*Not the best hero image but it does the job*/
+
+.about-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/portfolio/Otavio+by+Luciane+on+a+film+camera.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 300px;
+}
+
+.about-image-text h2 {
+  font-size:  50px;
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.about-image-text p {
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.section h1 {
+  font-size: 2em;
+  border-bottom: 2px solid gray;
+  width: 200px;
+  text-align: center;
+}
+
+/*I tried to use the flexbox instead of grids and columns */
+
+.bio1 {
+  display: flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: justify-all;
+  line-height: 45px;
+  font-size: 20px;
+}
+
+.bio1 img {
+  max-width: 25%;
+  float: left;
+  padding-right: 20px;
+  transition: all 1s;
+}
+
+.bio1 img:hover {
+  transform: scale(1.5);
+}
+
+.photoscontainer {
+  display: flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px;
+}
+
+.photoscontainer img{
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  transition: all 1s;
+}
+
+.photoscontainer img:hover {
+  transform: scale(1.5);
+}
+
+footer {
+  background: gray;
+  color: white;
+}
+
+.socialmediafooter {
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;  
+}
+
+i.fab, i.fas {
+  color: black;
+}
+
+.madeby{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
