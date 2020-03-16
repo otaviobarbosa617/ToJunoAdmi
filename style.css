@@ -88,25 +88,17 @@ ul.navbar li.right {
 
 /*I tried to use the flexbox instead of grids and columns */
 
-.bio1 {
+.bio1 p {
   display: flex;
   display: -ms-flexbox;
   flex-wrap: wrap;
   justify-content: center;
   text-align: justify-all;
+  align-items: center;
   line-height: 45px;
   font-size: 20px;
-}
-
-.bio1 img {
-  max-width: 25%;
-  float: left;
-  padding-right: 20px;
-  transition: all 1s;
-}
-
-.bio1 img:hover {
-  transform: scale(1.5);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .photoscontainer {
